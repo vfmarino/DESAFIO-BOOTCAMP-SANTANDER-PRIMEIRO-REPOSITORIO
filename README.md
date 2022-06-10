@@ -1,2 +1,22 @@
 # DESAFIO-BOOTCAMP-SANTANDER-PRIMEIRO-REPOSITORIO
+
 DESAFIO-BOOTCAMP-SANTANDER-PRIMEIRO-REPOSITORIO GIT/GITHUB
+
+Primeiro Repositório criado para o Desafio de Projeto do Bootcamp Santander/DIO
+
+**MÓDULOS**
+
+MÓDULO 0 - PREPARE-SE PARA A JORNADA
+
+MÓDULO I - CONTEÚDO DE ABERTURA
+
+MÓDULO II - HTML/CSS3/JS
+
+MÓDULO III - ANGULAR
+
+MÓDULO IV - JAVA
+
+MÓDULO V - SPRING FRAMEWORK
+
+## LINKS ÚTEIS
+[Sintaxe Básica Marcdown](https://www.markdownguide.org/basic-syntax/)
