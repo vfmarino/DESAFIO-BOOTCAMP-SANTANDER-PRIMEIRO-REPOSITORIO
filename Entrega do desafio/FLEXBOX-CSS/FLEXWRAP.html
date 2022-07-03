@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FlexWrap</title>
+
+<!--Na Classe flex-container podemos adicionar um flex-directio:column e teriamos uma 
+orientação totalmente diferente sendo interessante como exercicio para aprendizado -->
+
+    <style>
+
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 600px;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width:200px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+        .green{
+            background: green;
+        }
+
+        .orange{
+            background: orange;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1> No WRAP</h1>
+
+    <div class="flex-container">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+    </div>
+
+    <h1>  WRAP</h1>
+
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div>
+        <div class="item green">5</div>
+       
+    </div>
+
+    <h1>  WRAP-REVERSE</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div>
+      
+    </div>
+ 
+</body>
+
+
+</html>

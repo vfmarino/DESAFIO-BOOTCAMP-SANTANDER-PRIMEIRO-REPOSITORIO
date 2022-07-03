@@ -1,0 +1,94 @@
+<!-- FLEX shrink é PROPRIEDADE QUE ESTABELECE A CAPACIDADE DE REDUÇÃO OU COMPRESSÃO DO TAMANHO DE UM ITEM
+ESTABELECE QUANTAS VEZES UM ITEM PODE REDUZIR-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> FLEX-SHRINK</title>
+
+	<style>
+		.flex-container{
+			max-width: 350px;
+			display:flex;
+			border: 2px solid black;	
+		}
+
+		.item {
+			background-color: yellow;
+			margin: 5px;
+			font-size: 24px;
+			text-align: center;
+			color: black;
+		}
+		.s-1{
+			flex-shrink: 1;
+		}
+
+		.s-0{
+			flex-shrink: 0;
+			flex-basis: 100px;
+		}
+		.fg-1{
+			flex-grow: 1;
+		}		
+		
+	</style>
+
+
+</head>
+
+<body>
+	<h1>Flex SHRINK :1</h1>
+	
+	<div class="flex-container ">
+		<div class="item s-1 	">A</div>
+		<div class="item s-1 ">B</div>
+		<div class="item s-1 ">C</div>
+		<div class="item s-1 ">D</div>
+		<div class="item s-1 fg-1">E</div>
+			
+	</div>
+
+	<h1>Flex SHRINK:1</h1>
+	
+	<div class="flex-container ">
+		<div class="item s-1 fg-1">A</div>
+		<div class="item s-1 fg-1">B</div>
+		<div class="item s-1 fg-1">C</div>
+		<div class="item s-1 fg-1">D</div>
+		<div class="item s-1 fg-1">E</div>
+			
+	</div>
+
+	<h1>Flex SHRINK:1 CONTEUDO COM TAMANHO DIFERENTE</h1>
+	
+	<div class="flex-container ">
+		<div class="item s-1 fg-1">A</div>
+		<div class="item s-1 fg-1">B </div>
+		<div class="item s-1 fg-1">CFDGDFSGD</div>
+		<div class="item s-1 fg-1">D</div>
+		<div class="item s-1 fg-1">E</div>
+			
+	</div>
+
+	<h1>Flex SHRINK:0 BASIS 100PX</h1>
+	
+	<div class="flex-container ">
+		<div class="item s-0 fg-1">A</div>
+		<div class="item s-0 fg-1">B </div>
+		<div class="item s-0 fg-1">CFDasdasdadsasdGDFSGD</div>
+		<!--Nesse ponto o meu codigo não está realizando a quebra no codigo do curso ocorre 
+		uma quebra pulando para uma proxima linha
+		procurar entender o porque não ocorre a quebra -->
+		<div class="item s-0 fg-1">D</div>
+		<div class="item s-0 fg-1">E</div>
+			
+	</div>
+
+	 
+	
+</body>
+
+</html>

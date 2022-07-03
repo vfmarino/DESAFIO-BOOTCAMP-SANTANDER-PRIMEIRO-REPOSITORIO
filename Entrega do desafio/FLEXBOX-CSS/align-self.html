@@ -1,0 +1,120 @@
+<!-- ALIGN-SELF É A PROPRIEDADE QUE DEFINE O ALINHAMENTO DE MODO INDIVIDUAL SOBRE UM DETERMINADO ITEM
+
+AUTO( VEM POR PADRAO, REPEITA A DEFINIÇÃO DO ALIGN-ITENS DO CONTAINER)
+FLEX-START INICIO DO CONTAINER
+FLEX-END AO FINAL DO CONTAINER
+CENTER, RELATIVO AO CENTRO DE ACORDO COM O EIXO TRABALHO(ROW OU COLUNA)
+STRETCH, OCUPADO TODO O ESPAÇO RELATIVO
+BASeLINE UTILIZA UMA LINHA BASE DA TIPOGRAFIA-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> ALIGN-SELF</title>
+
+	<style>
+		.flex-container{
+			max-width: 350px;
+			display: flex;
+			border: 2px solid black;
+			margin-bottom: 20px;	
+		}
+
+		.item {
+			flex:1;
+			background-color: brown;
+			margin: 5px;
+			font-size: 24px;
+			text-align: center;
+			color: white;
+		}
+		
+		.flex-start{
+			align-self: flex-start;
+		}
+		
+		.center{
+			align-self:  center;
+		}
+		
+		.flex-end{
+			align-self: flex-end;
+		}
+		
+		.stretch{
+			align-self: stretch;
+		}
+		
+		.baseline{
+			align-self:  baseline;
+		}
+		
+		.auto{
+			align-self:  auto;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<h1>AUTO</h1>
+	
+	<div class="flex-container "> 
+		<div class="item auto">Aaa</div>
+		<div class="item auto">123</div>
+		<div class="item auto">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item auto">item 33</div>
+			
+	</div>
+
+	<h1>CENTER</h1>
+	<div class="flex-container "> 
+		<div class="item center">Aaa</div>
+		<div class="item center">123</div>
+		<div class="item center">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item center">item 33</div>
+			
+	</div>
+
+	<h1>BASELINE</h1>
+	<div class="flex-container "> 
+		<div class="item baseline">Aaa</div>
+		<div class="item baseline">123</div>
+		<div class="item baseline">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item baseline">item 33</div>
+			
+	</div>
+
+	<h1>STRETCH</h1>
+	<div class="flex-container "> 
+		<div class="item stretch">Aaa</div>
+		<div class="item stretch">123</div>
+		<div class="item stretch">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item stretch">item 33</div>
+			
+	</div>
+
+	<h1>FLEX-START</h1>
+	<div class="flex-container "> 
+		<div class="item flex-start">Aaa</div>
+		<div class="item flex-start">123</div>
+		<div class="item flex-start">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item flex-start">item 33</div>
+			
+	</div>
+
+	<h1>FLEX-END</h1>
+	<div class="flex-container "> 
+		<div class="item flex-end">Aaa</div>
+		<div class="item flex-end">123</div>
+		<div class="item flex-end">Csidufshd sdifusdhfisdu sdpfuihsfpidsjk sdfihs sdfuohs</div>
+		<div class="item flex-end">item 33</div>
+			
+	</div>
+
+</body>
+
+</html>

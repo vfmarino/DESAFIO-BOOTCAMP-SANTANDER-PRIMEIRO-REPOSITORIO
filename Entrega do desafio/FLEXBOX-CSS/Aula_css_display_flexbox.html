@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos do display Flexbox</title>
+</head>
+
+<style>
+
+    .flex{
+        max-width: 300px;
+        padding: 10px;
+        border: 2px solid black;
+        display: flex;
+        
+    }
+
+    .item{
+        background-color: aqua;
+        margin: 5px;
+
+    }
+
+    .flex-container{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    .flex-item{
+        background: blue;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin: 5px; 
+    }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .row-reverse li {
+        
+        background: red;
+    }
+    .column{
+        flex-direction: column;
+        float: left;
+        
+    } 
+    .column-reverse{
+        flex-direction: column-reverse;
+        float: right;
+        
+    }
+    .column li {
+        
+        background: orange;
+    }
+    .column-reverse li {
+        
+        background: purple;
+    }
+
+
+</style>
+<body>
+
+    <h1> ESTUDO DO DISPLAY FLEX</h1>
+
+    <div class="flex"><!--Faz com que os elementos fiquem em linha, ( display: flex)-->
+        
+        <!--div.item*3 + tab  cria 3 itens abaixo-->      
+
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>    
+
+    </div>
+
+    <H1> ESTUDO DO FLEX-DIRECTION </H1>
+    <div>
+    <ul class="flex-container row">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container row-reverse">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container column">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container column-reverse" >
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <!--importante lembrar de colocar a orientação na lista pai e não na classe filho-->
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- ORDER ORDENAÇÃO DOS ITENS-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> ORDER</title>
+
+	<style>
+		.flex-container{
+			max-width: 300px;
+			display: flex;
+			border: 2px solid black;
+			margin-bottom: 20px;	
+		}
+
+		.item {
+			flex:1;
+			background-color: brown;
+			margin: 5px;
+			font-size: 24px;
+			text-align: center;
+			color: white;
+		}
+		.o1{
+			order: 1;
+		}
+		.o2{
+			order: 2;
+		}
+		.o3{
+			order: 3;
+		}
+		.o4{
+			order: 4;
+		}
+	
+		.direction{
+			flex-direction: column;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<h1>Order: 0 (padrão)</h1>
+	
+	<div class="flex-container "> 
+		<div class="item ">A</div>
+		<div class="item ">B</div>
+		<div class="item ">C</div>
+		<div class="item ">D</div>
+			
+	</div>
+
+	<h1>Order: Diferentes</h1>
+	
+	
+	<div class="flex-container "> 
+		<div class="item o4">A</div>
+		<div class="item o2">B</div>
+		<div class="item o3">C</div>
+		<div class="item o1">D</div>
+			
+	</div>
+
+	<h1>COLUNAS</h1>
+	<h1>Order: 0 (padrão)</h1>
+	
+	<div class="flex-container direction"> 
+		<div class="item ">A</div>
+		<div class="item ">B</div>
+		<div class="item ">C</div>
+		<div class="item ">D</div>
+			
+	</div>
+
+	
+	<h1>Order: Diferentes</h1>
+	
+	
+	<div class="flex-container direction"> 
+		<div class="item o4">A</div>
+		<div class="item o2">B</div>
+		<div class="item o3">C</div>
+		<div class="item o1">D</div>
+			
+	</div>
+
+</body>
+
+</html>

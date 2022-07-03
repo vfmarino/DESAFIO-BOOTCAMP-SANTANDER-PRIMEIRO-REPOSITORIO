@@ -1,0 +1,87 @@
+<!-- FLEX É UM ATALHO OU ABREVIAÇÃO DE ESCRITA PARA AS PROPRIEDADES GROW, SHIRNK E BASIS-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> FLEX</title>
+
+	<style>
+		.flex-container{
+			max-width: 400px;
+			display:flex;
+			border: 2px solid black;
+			margin-bottom: 10px;	
+		}
+
+		.item {
+			background-color: brown;
+			margin: 5px;
+			font-size: 24px;
+			text-align: center;
+			color: white;
+		}
+
+		.flex-1{
+			flex:1;
+			/* grow=1 shirnk=1 basis=0  */
+		}
+		.flex-2{
+			flex:2;
+			/* grow=2 shirnk=1 basis=0  */
+		}
+		.flex-3{
+			flex:3;
+			/* grow=1 shirnk=1 basis=0  */
+		}
+
+		.largura{
+			width: 200px;
+			/*min width 250px ai vai considerar o tamanho minimo*/
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<h1>Flex 1</h1>
+	
+	<div class="flex-container ">
+		<div class="item flex-1">A</div>
+		<div class="item flex-1">BBB</div>
+		<div class="item flex-1">CC</div>
+		<div class="item flex-1">D</div>
+		<div class="item flex-1">EF</div>
+		
+			
+	</div>
+
+	<h1>Flex MISTURADO</h1>
+	
+	<div class="flex-container ">
+		<div class="item flex-1">A</div>
+		<div class="item flex-2">B</div>
+		<div class="item flex-2">C</div>
+		<div class="item flex-3">D</div>
+		<div class="item flex-1">E</div>
+		
+			
+	</div>
+
+	<P>WIDTH IGNORADO POR CAUSA DO BASIS, NESSE CASO ADICIONAR A LARGURA NAO MUDA NADA PRECISA DE UM MIN-WIDTH</P>
+	
+	<div class="flex-container ">
+		<div class="item flex-1 largura">A</div>
+		<div class="item flex-1 largura">BBB</div>
+		<div class="item flex-1 largura">CC</div>
+		<div class="item flex-1 largura">D</div>
+		<div class="item flex-1 largura">EF</div>
+		
+			
+	</div>
+
+</body>
+
+</html>
